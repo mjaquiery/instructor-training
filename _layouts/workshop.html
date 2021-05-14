@@ -63,7 +63,10 @@
     {% assign description = description | append: "..." %}
     {% endif %}
     <meta property="og:description" content="{{ description }}" />
-    <meta property="og:image" content="https://christinalk.github.io/instructor-training/assets/img/swc-icon-blue.svg" />
+    <meta property="og:image" content="{{ site.url }}/assets/img/cp-logo-blue.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Carpentries' logo" />
+    <meta name="twitter:card" content="summary" />
   </head>
   <body>
     <div class="container">
