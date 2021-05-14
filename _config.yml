@@ -28,6 +28,11 @@ repository: <USERNAME>/<PROJECT>
 # Email address, no mailto:
 email: "checkout@carpentries.org"
 
+# Generic description text for Twitter Card links
+# used where excerpt/summary/keypoints are not defined
+lesson_description: "Learning guide for instructors and learners, with the opportunity for live coding examples."
+workshop_description: "The Carpentries' workshop website for instructors and learners."
+
 # Sites.
 amy_site: "https://amy.carpentries.org/workshops"
 carpentries_github: "https://github.com/carpentries"
