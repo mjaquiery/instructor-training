@@ -44,7 +44,7 @@
 	<![endif]-->
     <title>{{ page.venue }}: {{ page.humandate }}</title>
 
-    <meta property="og:url" content="{{ site.url }}/{{ page.url }}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ page.title }}" />
     {% if page.excerpt %}
@@ -63,7 +63,7 @@
     {% assign description = description | append: "..." %}
     {% endif %}
     <meta property="og:description" content="{{ description }}" />
-    <meta property="og:image" content="http://christinalk.github.io/instructor-training/assets/img/swc-icon-blue.svg" />
+    <meta property="og:image:secure_url" content="https://christinalk.github.io/instructor-training/assets/img/swc-icon-blue.svg" />
   </head>
   <body>
     <div class="container">

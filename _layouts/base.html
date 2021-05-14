@@ -31,7 +31,7 @@
   {% if page.title %}{{ page.title }}{% endif %}{% if page.title and site.title %} &ndash; {% endif %}{% if site.title %}{{ site.title }}{% endif %}
   </title>
 
-    <meta property="og:url" content="{{ site.url }}/{{ page.url }}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="{{ page.title | default: site.title }}" />
       {% if page.summary %}
@@ -52,7 +52,7 @@
           {% assign description = description | append: "..." %}
       {% endif %}
     <meta property="og:description" content="{{ description }}" />
-    <meta property="og:image" content="http://christinalk.github.io/instructor-training/assets/img/swc-icon-blue.svg" />
+    <meta property="og:image:secure_url" content="https://christinalk.github.io/instructor-training/assets/img/swc-icon-blue.svg" />
 
   </head>
   <body>
