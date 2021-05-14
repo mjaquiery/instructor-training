@@ -34,12 +34,12 @@
     <meta property="og:url" content="{{ page.root }}/{{ page.url }}" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="{{ page.title }}" />
-      {% if page.excerpt %}
-        {% assign description = page.excerpt %}
-      {% elsif page.summary %}
+      {% if page.summary %}
         {% assign description = page.summary %}
       {% elsif page.questions %}
         {% assign description = page.questions | join: " " %}
+      {% elsif page.keypoints %}
+        {% assign description = page.keypoints | join: " " %}
       {% elsif site.lesson_description %}
         {% assign description = site.lesson_description %}
       {% else %}
